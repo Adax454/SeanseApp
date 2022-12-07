@@ -1,4 +1,6 @@
 package com.example.seanseapp;
 
-public class AllScreeningsActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AllScreeningsActivity extends AppCompatActivity {
 }
