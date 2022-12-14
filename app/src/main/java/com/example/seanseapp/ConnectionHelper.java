@@ -1,5 +1,6 @@
 package com.example.seanseapp;
 
+import android.annotation.SuppressLint;
 import android.os.StrictMode;
 import android.util.Log;
 
@@ -10,7 +11,7 @@ import java.sql.SQLException;
 public class ConnectionHelper {
     Connection conn;
     String un, password, ip, port, db;
-
+@SuppressLint("NewApi")
     public Connection connect() {
 
         ip = "172.1.1.0";

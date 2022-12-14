@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
                     textView.setText(resultSet.getString(1));
                 }
             }
+            else
+            {
+                ConnectionResult="Check Connection";
+            }
         }
         catch (Exception e)
         {
