@@ -54,6 +54,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#4860ac"
+        android:onClick="buttonAllScreenings"
         android:text="WSZYSTKIE SEANSE"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />

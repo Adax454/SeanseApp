@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
-
+        buttonAllScreenings = findViewById(R.id.buttonAllScreenings);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void GetDataFromSQL (View view)
+    public void buttonAllScreenings (View view)
     {
         try {
             ConnectionHelper connectionHelper = new ConnectionHelper();
             conn = connectionHelper.connect();
             if (conn!=null)
             {
-                String query = "Select * from Pracownicy";
+                String query = "Select * from Pracownicy where id_pracownika='1'";
                 Statement st = conn.createStatement();
                 ResultSet resultSet = st.executeQuery(query);
 
